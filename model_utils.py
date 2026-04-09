@@ -129,6 +129,8 @@ def compute_genre_embeddings(df, w2v_model):
 
 
 def build_embedding_matrix(df: pd.DataFrame):
+    print(type(df))
+    print(df.head() if hasattr(df, 'head') else df)
     vectorizer = CountVectorizer()
     matrix = vectorizer.fit_transform(df["genres_clean"])
     return matrix

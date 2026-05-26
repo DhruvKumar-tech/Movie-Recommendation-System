@@ -3,5 +3,4 @@ pandas
 numpy
 requests
 python-dotenv
-gensim
 scikit-learn

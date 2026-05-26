@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+requests
+gensim
+scikit-learn

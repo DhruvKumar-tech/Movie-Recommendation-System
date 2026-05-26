@@ -2,13 +2,11 @@ import os
 import numpy as np
 import pandas as pd
 import requests
-from dotenv import load_dotenv
 from gensim.models import Word2Vec
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 # Load environment variables from the .env file safely
-load_dotenv()
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 
 

@@ -3,7 +3,6 @@ import requests
 import numpy as np
 import pandas as pd
 import streamlit as st
-from dotenv import load_dotenv
 from model_utils import (
     load_movie_data,
     preprocess_genres,
@@ -14,7 +13,6 @@ from model_utils import (
 )
 
 # Load configuration values from local .env environment layer
-load_dotenv()
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")
 
 st.set_page_config(
